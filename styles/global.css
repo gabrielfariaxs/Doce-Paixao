@@ -29,12 +29,12 @@ h1, h2 {
 }
 
 h1{
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   line-height: 1.25;
 }
 
 h2{
-  font-size: var(--text-lg);
+  font-size: var(--text-base-aa);
   line-height: 1.2;
 }
 

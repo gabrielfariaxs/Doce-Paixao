@@ -1,0 +1,115 @@
+section.hero {
+  max-width: 80rem;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  margin-inline: auto;
+
+  & h1{
+    max-width: 40rem;
+  }
+
+  & h1 div{
+    display: inline-block;
+    overflow: hidden;
+    height: 5rem;
+    width: 100%;
+  }
+
+  & h1 span:nth-child(1), h1 span:nth-child(4){
+    color: var(--snitap-joy-mid);
+  }
+  & h1 span:nth-child(2){
+    color: var(--snitap-sky-mid);
+  }
+  & h1 span:nth-child(3){
+    color: var(--snitap-joy-light);
+  }
+  & h1 span{
+    display: block;
+    height: 5rem;
+    line-height: 4rem;
+    animation: slideUp 6s infinite ease;
+  }
+
+  & .buttons{
+    display: flex;
+    gap: 2rem;
+  & .button{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    border-radius: 5rem;
+    transition: scale 350ms;
+    &.buy{
+      padding: 1.5rem 3rem;
+      background-color: var(--snitap-sun);
+      box-shadow: 
+      0 2px 5px rgb(0 0 0 / .1),
+      0 9px 9px rgb(0 0 0 / .09),
+      0 20px 12px rgb(0 0 0 / .05),
+      0 36px 15px rgb(0 0 0 / .01);
+    }
+
+    &:hover{
+    scale: 1.1;
+    }
+  }
+  }
+}
+
+@keyframes slideUp{
+  0%, 22%{
+    transform: translateY(0);
+  }
+  23%{
+    transform: translateY(calc(-5rem - 15px));
+  }
+  25%{
+    transform: translateY(calc(-5rem + 10px));
+  }
+
+  27%{
+    transform: translateY(calc(-5rem - 5px));
+  }
+  29%{
+    transform: translateY(calc(-5rem + 5px));
+  }
+  31%{
+    transform: translateY(calc(-5rem - 10px));
+  }
+  33%, 55%{
+    transform: translateY(-5rem);
+  }
+
+  56% {
+    transform: translateY(calc(-10rem - 15px));
+  }
+  58% {
+    transform: translateY(calc(-10rem + 10px));
+  }
+  60%{
+    transform: translateY(calc(-10rem - 5px));
+  }
+  62%{
+    transform: translateY(calc(-10rem + 5px));
+  }
+  66%, 88%{
+    transform: translateY(-10rem);
+  }
+  89% {
+    transform: translateY(calc(-15rem - 15px));
+  }
+  91% {
+    transform: translateY(calc(-15rem + 10px));
+  }
+  93%{
+    transform: translateY(calc(-15rem - 5px));
+  }
+  95%{
+    transform: translateY(calc(-15rem + 5px));
+  }
+  100%{
+    transform: translateY(-15rem);
+  }
+}
