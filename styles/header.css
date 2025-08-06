@@ -1,4 +1,4 @@
-header{
+header.top{
   max-width: 80rem;
   width: 100%;
   padding: 1.25rem 2rem;
@@ -6,6 +6,7 @@ header{
   align-items: center;
   justify-content: space-between;
   margin-inline: auto;
+  
 
   img {
     width: 2rem;
@@ -36,4 +37,15 @@ header{
     justify-content: center;
     border-radius: 50%;
   }
+}
+header a:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--ff-base);
+  font-size: 1.2rem;
+  color: #000;
+ 
+   border-radius: 999px; /* faz um fundo "pílula" arredondado */
+  padding: 0.5rem 1rem;  /* adiciona espaço interno */
 }

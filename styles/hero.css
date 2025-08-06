@@ -32,7 +32,7 @@ section.hero {
     display: block;
     height: 5rem;
     line-height: 4rem;
-    animation: slideUp 6s infinite ease;
+    animation: slideUp 5s 2s infinite ease;
   }
 
   & .buttons{
@@ -47,7 +47,7 @@ section.hero {
     transition: scale 350ms;
     &.buy{
       padding: 1.5rem 3rem;
-      background-color: var(--bg-new);
+      background-color: var(--snitap-joy-light);
       box-shadow: 
       0 2px 5px rgb(0 0 0 / .1),
       0 9px 9px rgb(0 0 0 / .09),
@@ -82,7 +82,7 @@ section.hero {
      left: 3%;
 
      transform: translateX(200%);
-     animation: slideIn 3s ease forwards;
+     animation: slideIn 3s 200ms ease forwards;
     }
 
     & img[src*="morangodoamor"]{
@@ -97,17 +97,29 @@ section.hero {
       max-width: 5.5rem;
       top: 30%;
       z-index: 0;
+      opacity:0;
+      transform: translateX(400%);
+      animation: slideIn 2s 800ms ease both, appear 100ms 800ms both;
     }
 
     & img[src*="Stars2"] {
    max-width: 2.5rem;
    right: 0;
    bottom: 35%;
+   transform: translateX(400%);
+   animation: slideIn 2.2s 800ms ease both, appear 100ms
 }
   }
 }
-
+@keyframes appear{
+  to{
+    opacity: 1;
+  }
+}
 @keyframes slideIn{
+  50%{
+    transform: translateX(-20px);
+  }
   100%{
     transform: translateX(0);
   }
