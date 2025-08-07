@@ -1,6 +1,8 @@
 # Doce Paixão
 
 **Doce Paixão** é uma landing page para uma loja fictícia que vende *morango do amor* e outras guloseimas. O projeto foi desenvolvido com foco em design visual atrativo, utilizando HTML, CSS e imagens personalizadas.
+![Uploading image.png…]()
+
 
 ## 🌟 Funcionalidades
 
